@@ -8,6 +8,7 @@ $(document).ready(function(){
     });
     
     $('button').click(function(){
+      event.preventDefault();
       $('form').hide();
     });
     
