@@ -1,5 +1,9 @@
 $(document).ready(function(){
     
+    $(function(){
+      $(document).tooltip();
+    });
+    
     $('form').hide();
     
     var $id;
@@ -13,16 +17,14 @@ $(document).ready(function(){
     });
     
     $('button').click(function(){
-      //$('form').reset();
       event.preventDefault();
-      //console.log($id);
-      //console.log($('#name').prop('value'));
-      reservedSeats.push({seat: $id, name: $('#name').prop('value')});
+      reservedSeats.push({seat: $id, name: $('#name').val()});
       $('form').hide();
       for (i = 0; i < reservedSeats.length; i++){
         console.log(reservedSeats[i].name);
         console.log(reservedSeats[i].seat);
       }
+      $('#name').val("");
     });
     
 
