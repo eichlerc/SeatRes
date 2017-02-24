@@ -21,15 +21,31 @@ h1 {
 #logo {
 
 width: 30%;
-margin:2% 0 50% 50%;
-position: absolute;
+margin: 2% auto 1%;
+/*position: absolute;*/
 }
 
-#center {
-
-
+#screen {
+  clear: both;
 }
 
 img {
   width: 100%;
 }
+
+form {
+  color: white;
+}
+
+#legend {
+  color: white;
+  text-align: right;
+  padding-right: 5%;
+}
+
+#legend img {
+  width: 10%;
+  height: 10%;
+  margin-left: 2%;
+}
+
