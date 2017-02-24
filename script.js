@@ -16,8 +16,9 @@ $(document).ready(function(){
     
     $('.seat').click(function(){
       $('img',this).attr('src', 'images/seat.svg');
-      $(this).addClass('reserved').off();
+      $(this).addClass('reserved');
       seat = $(this);
+      seat.attr('title', 'Pending');
       id = $(this).attr('id');
       $('form').show();
     });
