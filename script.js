@@ -6,19 +6,27 @@ $(document).ready(function(){
     
     $('form').hide();
     
-    var $id;
+    var id;
+    var seat;
     var reservedSeats = [];
+    
+    $('.seat').each(function(){
+      $(this).attr('title', 'Available');
+    });
     
     $('.seat').click(function(){
       $('img',this).attr('src', 'images/seat.svg');
       $(this).addClass('reserved').off();
-      $id = $(this).attr('id');
+      seat = $(this);
+      id = $(this).attr('id');
       $('form').show();
     });
     
     $('button').click(function(){
       event.preventDefault();
-      reservedSeats.push({seat: $id, name: $('#name').val()});
+      var name = $('#name').val();
+      reservedSeats.push({seat: id, name: $('#name').val()});
+      seat.attr('title', 'Reserved by:  ' + name);
       $('form').hide();
       for (i = 0; i < reservedSeats.length; i++){
         console.log(reservedSeats[i].name);
