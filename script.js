@@ -12,7 +12,7 @@ $(document).ready(function(){
       $(this).attr('title', 'Available');
     });
     
-    $('.seat').click(function(){
+    $('.seat').on('click', function(){
       var seat;
       $('img',this).attr('src', 'images/seat.svg');
       $(this).addClass('reserved');
@@ -20,9 +20,10 @@ $(document).ready(function(){
       seat.attr('title', 'Pending');
       $('#toggle').show();
       $('#selections').append('<p>Seat Number: ' + seat.attr('id') + ' </p>');
+      $('#reservations').html('');
     });
     
-    $('button').click(function(){
+    $('button').on('click', function(){
       event.preventDefault();
       var name = $('#name').val();
       $('#reservations').append(name + ', you have reserved seats: ');
@@ -32,7 +33,6 @@ $(document).ready(function(){
           var newRes = {seat: seatNo, name: name};
           reservedSeats.push(newRes);
           $(this).attr('title', 'Reserved by: ' + name);
-          console.log('append');
           $('#reservations').append(seatNo + " ");
         }
       });
