@@ -22,6 +22,7 @@ $(document).ready(function(){
       $('#formstyle').show();
       $('#selections').append('<p>Seat Number: ' + seat.attr('id') + ' </p>');
       $('#reservations').html('');
+      $('#reservations').hide();
     });
 
     $('button').on('click', function(){
