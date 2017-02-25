@@ -4,7 +4,7 @@ $(document).ready(function(){
       $(document).tooltip();
     });
     
-    $('form').hide();
+    $('#toggle').hide();
     
     var reservedSeats = [];
     
@@ -18,25 +18,27 @@ $(document).ready(function(){
       $(this).addClass('reserved');
       seat = $(this);
       seat.attr('title', 'Pending');
-      $('form').show();
+      $('#toggle').show();
+      $('#selections').append('<p>Seat Number: ' + seat.attr('id') + ' </p>');
     });
     
     $('button').click(function(){
-      console.log('button');
       event.preventDefault();
+      var name = $('#name').val();
+      $('#reservations').append(name + ', you have reserved seats: ');
       $('.seat').each(function(){
-        console.log('each');
         if($(this).attr('title') === 'Pending'){
-          console.log('yes');
           var seatNo = $(this).attr('id');
-          var name = $('#name').val();
           var newRes = {seat: seatNo, name: name};
           reservedSeats.push(newRes);
           $(this).attr('title', 'Reserved by: ' + name);
+          console.log('append');
+          $('#reservations').append(seatNo + " ");
         }
       });
-      $('form').hide();
+      $('#toggle').hide();
       $('#name').val("");
+      $('#selections').html('');
     });
     
 });

@@ -33,6 +33,15 @@ img {
   width: 100%;
 }
 
+#selections {
+  color: white;
+}
+
+#reservations {
+  color: white;
+  margin: 2%;
+}
+
 form {
   color: white;
 }
