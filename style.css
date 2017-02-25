@@ -50,39 +50,32 @@ img {
 }
 
 .jumbotron {
-  background-image: url('images/theater.jpg');
-#selections {
+  background: url('images/theater.jpg') center/cover no-repeat;
+  width: 100%;
   color: white;
 }
 
 #reservations {
-  color: white;
+  color: black;
   margin: 2%;
+}
+
+#selections {
+  color: white;
 }
 
 form {
 color: white;
-margin-top: 48px;
-padding: 30px 50px;
+/*padding: 30px 50px;*/
 font-weight:600;
-
-}
-
-#legend {
-  color: white;
-  text-align: right;
-  padding-right: 5%;
-}
-
-#legend img {
-  width: 10%;
-  height: 10%;
-  margin-left: 2%;
+width:100%;
 }
 
 #formstyle {
   background-color: #313131;
   width: 100%;
+  margin-top: 3%;
+  padding: 4%;
 }
 
 p {
@@ -94,4 +87,8 @@ p {
 span {
   font-weight:400;
 
+}
+
+.container {
+  padding-bottom: 5%;
 }
