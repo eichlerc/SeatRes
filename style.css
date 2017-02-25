@@ -1,4 +1,16 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
+h3 {
+  color: white;
+  font-family: helvetica, sans-serif;;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+  width: 70%;
+  margin: 25px auto 15px auto;
+}
 
 .seat {
   margin: 1% 0;
@@ -10,7 +22,9 @@
 }
 
 body {
-  background-color: #2d363d;
+  /*background-color: #2d363d;*/
+  background-color: #050505;
+
 }
 
 h1 {
@@ -21,20 +35,34 @@ h1 {
 #logo {
 
 width: 30%;
-margin: 2% auto 1%;
+margin: 1% auto 1%;
 /*position: absolute;*/
 }
 
 #screen {
   clear: both;
+  margin-top: -100px;
+  padding-top: 10px;
 }
 
 img {
   width: 100%;
 }
 
-form {
+.jumbotron {
+  background-image: url('images/theater.jpg');
   color: white;
+  min-height:300px;
+  margin-top:0px;
+  /*margin-bottom:8px;*/
+}
+
+form {
+color: white;
+margin-top: 48px;
+padding: 30px 50px;
+font-weight:600;
+
 }
 
 #legend {
@@ -49,3 +77,18 @@ form {
   margin-left: 2%;
 }
 
+#formstyle {
+  background-color: #313131;
+  width: 100%;
+}
+
+p {
+  text-align: center;
+  font-weight:300;
+
+}
+
+span {
+  font-weight:400;
+
+}
