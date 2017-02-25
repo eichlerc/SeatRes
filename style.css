@@ -86,7 +86,7 @@ width:100%;
 p {
   font-family: 'Montserrat', Sans-Serif;
   text-align: center;
-  font-weight:600;
+  /*font-weight:600;*/
 }
 
 span {
@@ -103,7 +103,7 @@ span {
 #selections {
   color: red;
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 #legend {
@@ -111,3 +111,34 @@ span {
   margin: 0 auto;
   width: 65%;
 }
+
+
+@media (max-width:420px) {
+  #selections {
+    color: red;
+    font-size: 1em;
+  }
+
+form {
+  font-size: .75em;
+  /*width: 50%;*/
+  text-align: center;
+}
+
+form #name {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#myButton {
+  font-size: .75em;
+  /*width: 50%;*/
+}
+
+/*.seat img {
+  width: 120%;
+  height: 120%;
+}*/
+
+
+  }
