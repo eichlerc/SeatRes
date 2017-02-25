@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('.seat').on('click', function(){
       var seat;
-      $('img',this).attr('src', 'images/seat.svg');
+      $('img',this).attr('src', 'images/seatPending.svg');
       $(this).addClass('reserved');
       seat = $(this);
       seat.attr('title', 'Pending');
@@ -32,6 +32,7 @@ $(document).ready(function(){
 
       $('.seat').each(function(){
         if($(this).attr('title') === 'Pending'){
+          $('img',this).attr('src', 'images/seat.svg');
           var seatNo = $(this).attr('id');
           var newRes = {seat: seatNo, name: name};
           reservedSeats.push(newRes);
