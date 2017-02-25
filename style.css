@@ -56,12 +56,18 @@ img {
 }
 
 #reservations {
-  color: black;
-  margin: 2%;
+  color: white;
+  margin: 3% auto 0;
+  background-color: #313131;
+  width: 100%;
+  padding: 4%;
+  text-align: center;
+  font-size: 2em;
 }
 
 #selections {
-  color: white;
+  color: red;
+  font-size: 1.5em;
 }
 
 form {

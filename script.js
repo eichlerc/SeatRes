@@ -5,6 +5,7 @@ $(document).ready(function(){
     });
 
     $('#formstyle').hide();
+    $('#reservations').hide();
 
     var reservedSeats = [];
 
@@ -41,11 +42,12 @@ $(document).ready(function(){
           resAlert += seatNo + " ";
         }
       });
+      
+      // $('#reservations').dialog({
+      //   position: {my:"center top", at:"center", of:window}
+      // });
 
-      $('#reservations').dialog({
-        position: {my:"center top", at:"center", of:window}
-      });
-
+      $('#reservations').show();
       $('#formstyle').hide();
       $('#name').val("");
       $('#selections').html('');
