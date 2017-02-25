@@ -51,10 +51,13 @@ img {
 
 .jumbotron {
   background-image: url('images/theater.jpg');
+#selections {
   color: white;
-  min-height:300px;
-  margin-top:0px;
-  /*margin-bottom:8px;*/
+}
+
+#reservations {
+  color: white;
+  margin: 2%;
 }
 
 form {
