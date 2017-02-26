@@ -130,6 +130,11 @@ form #name {
   margin: 0 auto;
 }
 
+form #email {
+  width: 50%;
+  margin: 0 auto;
+}
+
 #myButton {
   font-size: .75em;
   /*width: 50%;*/
