@@ -57,7 +57,8 @@ $(document).ready(function(){
       $('#reservations').show();
       $('#formstyle').hide();
       $('#name').val("");
+      $('#email').val("");
       $('#selections').html('');
-    }); //end of onclick
+    }); 
 
 });
