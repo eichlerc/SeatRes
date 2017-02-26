@@ -14,6 +14,7 @@ $(document).ready(function(){
     });
 
     $('.seat').on('click', function(){
+      $('.formtwo').hide();
       var seat;
       $('img',this).attr('src', 'images/seatPending.svg');
       $(this).addClass('reserved');
@@ -24,6 +25,10 @@ $(document).ready(function(){
       $('#reservations').html('');
       $('#reservations').hide();
       $('.reserved').off('click');
+    });
+
+    $('.formone').on('click', function(){
+      $('.formtwo').show();
     });
 
     $('button').on('click', function(){
